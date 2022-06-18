@@ -1,0 +1,41 @@
+
+        const exampleEmbed = new MessageEmbed()
+
+            .setColor('RANDOM')
+            .setTitle('Some title')
+            .setURL('https://discord.js.org/')
+
+            .setAuthor({ name: client.user.username, iconURL: client.user.displayAvatarURL({ size: 1024, dynamic: true })})
+            .setDescription('Some description here')
+
+            .addFields(
+                { name: `Enabled - ${commands.size}`, value: commands.map(x => `\`${x.name}${x.aliases[0] ? ` (${x.aliases.map(y => y).join(', ')})\`` : '\`'}`).join(' | ')},
+                { name: '\u200B', value: '\u200B' },
+                { name: 'Inline field title', value: 'Some value here', inline: true },
+                { name: 'Inline field title', value: 'Some value here', inline: true },
+            )
+            .addField('Inline field title', 'Some value here', true)
+            .setImage('https://i.imgur.com/AfFp7pu.png')
+            .setTimestamp()
+            .setFooter({ text: 'Some footer text here', iconURL: 'https://i.imgur.com/AfFp7pu.png' });
+
+        message.channel.send({ embeds: [exampleEmbed] });
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            const row = new MessageActionRow()
+			.addComponents(
+				// ...
+			);
+
+		const embed = new MessageEmbed()
+			.setColor('#0099ff')
+			.setTitle('Some title')
+			.setURL('https://discord.js.org')
+			.setDescription('Some description here');
+
+		await interaction.reply({ content: 'Pong!', ephemeral: true, embeds: [embed], components: [row] });
