@@ -1,9 +1,9 @@
 {
-  "name": "music-bot",
+  "name": "djelotero",
   "main": "main.js",
   "author": "are u okay?#7118",
   "version": "0.0.1",
-  "repository": "",
+  "repository": "https://github.com/diegofloresj/dj-elotero",
   "description": "A complete Discord music bot.",
   "scripts": {
     "start": "node main.js", 
