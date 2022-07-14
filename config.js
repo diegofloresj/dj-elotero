@@ -1,7 +1,7 @@
 module.exports = {
     app: {
         px: '>',
-        token: 'OTg3NDAxMTU2NzU2MTE5NjUy.G0cb4_.2vk4qD7kZNCmE_Mrz8zes3aInc_U1_Wkefvz70',
+        token: 'BOT-TOKEN',
         playing: 'DJ Elotero'
     },
 
